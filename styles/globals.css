@@ -1,0 +1,114 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+.navbar {
+  background: #2d72d9;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(45,114,217,0.08);
+}
+.home-btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: #1b4e8c;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.home-btn:hover {
+  background: #17406e;
+}
+.main-content {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  gap: 2rem;
+}
+.blog-title {
+  color: #2d72d9;
+  margin-top: 0;
+}
+.blog-desc {
+  color: #555;
+  margin-bottom: 2rem;
+}
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+.post-link {
+  color: #2d72d9;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.post-link:hover {
+  background: #f0f6ff;
+}
+.markdown-content h1, .markdown-content h2, .markdown-content h3 {
+  color: #2d72d9;
+}
+.markdown-content blockquote {
+  border-left: 4px solid #2d72d9;
+  background: #f0f6ff;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  color: #555;
+}
+.markdown-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+.markdown-content th, .markdown-content td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.markdown-content tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.widget {
+  background: #2d72d9;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  min-width: 220px;
+  max-width: 260px;
+  box-shadow: 0 2px 8px rgba(45,114,217,0.08);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+.widget h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.widget-tip {
+  background: #fff;
+  color: #2d72d9;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  box-shadow: 0 1px 4px rgba(255,255,255,0.15);
+}

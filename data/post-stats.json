@@ -1,0 +1,10 @@
+{
+  "user-sample": {
+    "likes": 1,
+    "comments": 0
+  },
+  "hello-world": {
+    "likes": 1,
+    "comments": 1
+  }
+}
