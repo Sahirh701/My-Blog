@@ -41,39 +41,45 @@ const Home = ({ posts }) => {
   };
 
   return (
-    <div className="main-content">
-      <h1>✨ My Stylish Blog ✨</h1>
-      <p>Welcome to your modern markdown-powered blog.</p>
-      <div className="widget">
-        <h3>📊 Widget: Blog Stats</h3>
-        <ul>
-          <li>📝 Posts: {stats.posts}</li>
-        </ul>
+    <div className="max-w-4xl mx-auto p-4">
+      <h1 className="text-3xl font-bold mb-4">✨ My Stylish Blog ✨</h1>
+      <p className="mb-4">Welcome to your modern markdown-powered blog.</p>
+      <div className="mb-4">
+        <h2 className="text-lg font-bold mb-2">📊 Widget: Blog Stats</h2>
+        <p>📝 Posts: {stats.posts}</p>
       </div>
-      <form onSubmit={handleAddPost}>
-        <h2>Add New Blog Post</h2>
+      <form onSubmit={handleAddPost} className="mb-4">
+        <h2 className="text-lg font-bold mb-2">Add New Blog Post</h2>
         <input
           type="text"
           placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+          className="w-full p-2 mb-2 border border-gray-300"
         />
         <textarea
           placeholder="Content (Markdown supported)"
           value={content}
           onChange={(e) => setContent(e.target.value)}
           rows={8}
+          className="w-full p-2 mb-2 border border-gray-300"
         />
-        <button type="submit">Add Post</button>
+        <button
+          type="submit"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Add Post
+        </button>
       </form>
-      <ul className="post-list">
+      <h2 className="text-lg font-bold mb-2">Blog Posts</h2>
+      <ul>
         {posts.map((post) => (
-          <li key={post.slug}>
+          <li key={post.slug} className="mb-2">
             <Link href={`/posts/${post.slug}`}>{post.slug.replace(/-/g, ' ')}</Link>
           </li>
         ))}
         {userPosts.map((post) => (
-          <li key={post.slug}>
+          <li key={post.slug} className="mb-2">
             <Link href={`/posts/user-${post.slug}`}>{post.title}</Link>
           </li>
         ))}
